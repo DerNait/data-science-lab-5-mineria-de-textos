@@ -1,0 +1,8 @@
+,tipo,nulos,% nulos,valores_unicos
+id,int64,0,0.0,7485
+keyword,str,56,0.75,221
+location,str,2472,33.03,3321
+text,str,0,0.0,7485
+target,int64,0,0.0,2
+n_palabras,int64,0,0.0,31
+n_caracteres,int64,0,0.0,147

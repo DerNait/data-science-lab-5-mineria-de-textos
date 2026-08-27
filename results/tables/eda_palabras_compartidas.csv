@@ -1,0 +1,8 @@
+palabra,frec_desastre,frec_no_desastre,p_desastre,p_no_desastre,log_ratio
+video,65,95,0.00228,0.00285,-0.223
+still,56,72,0.00197,0.00216,-0.095
+emergency,77,80,0.00271,0.0024,0.118
+burning,55,52,0.00193,0.00156,0.213
+people,101,91,0.00355,0.00273,0.261
+news,139,58,0.00489,0.00174,1.031
+fire,177,72,0.00622,0.00216,1.056

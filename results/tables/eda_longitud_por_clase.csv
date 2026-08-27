@@ -1,0 +1,5 @@
+,n_palabras,n_palabras,n_palabras,n_palabras,n_palabras,n_caracteres,n_caracteres,n_caracteres,n_caracteres,n_caracteres
+,mean,median,std,min,max,mean,median,std,min,max
+target,,,,,,,,,,
+no desastre,14.67,15.0,6.16,1,31,95.58,101.0,35.94,7,157
+desastre,15.14,15.0,5.09,2,30,108.02,114.0,29.27,14,151

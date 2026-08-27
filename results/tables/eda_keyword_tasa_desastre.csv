@@ -1,0 +1,222 @@
+keyword_limpia,n_tweets,tasa_desastre
+derailment,33,1.0
+debris,37,1.0
+wreckage,37,1.0
+outbreak,39,0.974
+oil spill,38,0.974
+typhoon,36,0.972
+suicide bombing,32,0.969
+suicide bomber,31,0.968
+bombing,28,0.929
+nuclear disaster,34,0.912
+rescuers,32,0.906
+suicide bomb,30,0.9
+evacuated,36,0.889
+razed,35,0.886
+wildfire,33,0.879
+wild fires,31,0.871
+airplane accident,34,0.853
+mass murder,32,0.844
+forest fires,32,0.844
+buildings on fire,32,0.844
+bridge collapse,35,0.829
+casualties,35,0.8
+drought,35,0.8
+forest fire,19,0.789
+thunderstorm,33,0.788
+violent storm,33,0.788
+evacuation,33,0.788
+earthquake,39,0.769
+floods,33,0.758
+sandstorm,37,0.757
+devastation,36,0.75
+hailstorm,32,0.75
+collision,39,0.744
+heat wave,34,0.735
+terrorist,30,0.733
+bioterrorism,26,0.731
+hostages,37,0.73
+bush fires,25,0.72
+terrorism,32,0.719
+wounded,37,0.703
+displaced,30,0.7
+survivors,30,0.7
+attack,36,0.694
+massacre,36,0.694
+sinkhole,39,0.692
+arson,32,0.688
+buildings burning,32,0.688
+accident,35,0.686
+injured,35,0.686
+deaths,38,0.684
+derailed,38,0.684
+famine,39,0.667
+catastrophic,30,0.667
+dust storm,36,0.667
+flooding,38,0.658
+rioting,35,0.657
+structural failure,35,0.657
+fire truck,32,0.656
+volcano,26,0.654
+hazardous,30,0.633
+evacuate,40,0.625
+refugees,34,0.618
+crashed,34,0.618
+tragedy,36,0.611
+attacked,35,0.6
+emergency plan,35,0.6
+bioterror,37,0.595
+mass murderer,32,0.594
+cyclone,32,0.594
+fatal,29,0.586
+devastated,31,0.581
+fatalities,45,0.578
+police,37,0.568
+engulfed,30,0.567
+collided,39,0.564
+radiation emergency,9,0.556
+hijacker,33,0.545
+burning buildings,28,0.536
+rainstorm,34,0.529
+hurricane,38,0.526
+ambulance,38,0.526
+lightning,33,0.515
+natural disaster,33,0.515
+hail,35,0.514
+storm,35,0.514
+explosion,39,0.513
+bombed,38,0.5
+rescued,35,0.486
+derail,35,0.486
+hostage,31,0.484
+hijacking,32,0.469
+hijack,32,0.469
+damage,41,0.463
+tornado,35,0.457
+chemical emergency,33,0.455
+snowstorm,29,0.448
+seismic,29,0.448
+bomb,34,0.441
+casualty,34,0.441
+weapons,39,0.436
+disaster,35,0.429
+flood,35,0.429
+landslide,33,0.424
+collapse,33,0.424
+first responders,29,0.414
+windstorm,40,0.4
+drowned,38,0.395
+nuclear reactor,36,0.389
+electrocuted,34,0.382
+quarantined,37,0.378
+emergency,37,0.378
+eyewitness,32,0.375
+ablaze,35,0.371
+collapsed,35,0.371
+crash,33,0.364
+weapon,39,0.359
+whirlwind,39,0.359
+rubble,28,0.357
+trauma,31,0.355
+annihilation,29,0.345
+flames,39,0.333
+emergency services,33,0.333
+mudslide,37,0.324
+tsunami,34,0.324
+annihilated,34,0.324
+thunder,38,0.316
+detonate,32,0.312
+wounds,33,0.303
+survived,33,0.303
+burning,34,0.294
+war zone,24,0.292
+fire,38,0.289
+trapped,32,0.281
+apocalypse,32,0.281
+detonation,32,0.281
+exploded,32,0.281
+injuries,33,0.273
+fatality,37,0.27
+drowning,34,0.265
+demolition,34,0.265
+deluged,27,0.259
+death,36,0.25
+destroyed,32,0.25
+demolished,28,0.25
+destroy,37,0.243
+sirens,29,0.241
+desolate,29,0.241
+arsonist,34,0.235
+military,34,0.235
+dead,30,0.233
+sunk,39,0.231
+danger,36,0.222
+cliff fall,36,0.222
+pandemonium,37,0.216
+burned,33,0.212
+injury,33,0.212
+hazard,34,0.206
+loud bang,34,0.206
+inundation,10,0.2
+catastrophe,36,0.194
+desolation,36,0.194
+battle,26,0.192
+rescue,21,0.19
+wreck,37,0.189
+threat,11,0.182
+riot,33,0.182
+destruction,34,0.176
+inundated,35,0.171
+sinking,37,0.162
+upheaval,38,0.158
+survive,32,0.156
+trouble,33,0.152
+meltdown,33,0.152
+body bagging,33,0.152
+blown up,33,0.152
+lava,34,0.147
+quarantine,34,0.147
+demolish,34,0.147
+army,34,0.147
+flattened,34,0.147
+deluge,42,0.143
+bleeding,35,0.143
+blood,35,0.143
+screams,35,0.143
+obliteration,29,0.138
+curfew,37,0.135
+avalanche,30,0.133
+blaze,38,0.132
+crushed,31,0.129
+obliterate,31,0.129
+obliterated,31,0.129
+twister,40,0.125
+fear,40,0.125
+siren,40,0.125
+armageddon,42,0.119
+screamed,34,0.118
+blizzard,37,0.108
+crush,37,0.108
+mayhem,30,0.1
+harm,41,0.098
+hellfire,21,0.095
+drown,32,0.094
+stretcher,33,0.091
+collide,34,0.088
+smoke,34,0.088
+bloody,35,0.086
+epicentre,12,0.083
+panic,37,0.081
+explode,38,0.079
+wrecked,39,0.077
+blight,32,0.062
+panicking,33,0.061
+blew up,33,0.061
+traumatised,35,0.057
+screaming,36,0.056
+electrocute,32,0.031
+body bag,33,0.03
+blazing,34,0.029
+ruin,37,0.027
+body bags,41,0.024
+aftershock,32,0.0
