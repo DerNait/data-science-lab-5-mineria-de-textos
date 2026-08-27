@@ -1,0 +1,16 @@
+palabra,freq_no_desastre,freq_desastre,logratio
+fatality,39,35,0.0023
+weapon,46,41,-0.0048
+2,112,101,0.0053
+said,27,24,-0.0056
+china,23,20,-0.0258
+school,37,32,-0.0334
+live,32,30,0.0452
+plan,41,35,-0.0464
+another,35,33,0.0506
+emergency,81,77,0.0577
+call,25,24,0.0685
+thunder,25,20,-0.1059
+flame,29,29,0.1077
+9,31,31,0.1077
+story,25,25,0.1077
