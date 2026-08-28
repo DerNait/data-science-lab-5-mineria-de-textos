@@ -1,0 +1,11 @@
+tipo,texto,target,pred_base,pred_aumentado,negatividad
+corregido,raining flooding florida tampabay tampa 18 19 day lost count,1,0,1,0.6591
+corregido,kelly osbourne attacked racist donald trump remark latino view urlweb,1,0,1,0.8953
+corregido,biolab safety concern grow fedex stop transporting certain specimen research facility dumbfounded action urlweb,0,1,0,0.2447
+corregido,drake killing dude tea bagging dead body point,1,0,1,0.9329
+corregido,liberal compassion b specific feminist said bombed japan back traditional sexist value,0,1,0,0.1546
+danado,tried 11 eye akame ga kill tokyo ghoul damn bloody dont dare watch,0,0,1,0.9527
+danado,loner diary pattern sand may blown away photo two choked flame urlweb,0,0,1,0.8649
+danado,shadowflame wraith bombed urlweb via,1,1,0,0.5
+danado,might casualty tomorrow,1,1,0,0.5
+danado,another day passed thankfully central command confirmed no new casualty please pray urlweb,1,1,0,0.1815
