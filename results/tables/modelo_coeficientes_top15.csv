@@ -1,31 +1,31 @@
 termino,coeficiente,empuja_hacia
-fire,3.538335607081098,desastre
-hiroshima,3.174527293018748,desastre
-storm,2.625345514470405,desastre
-california,2.6122824584187314,desastre
-wildfire,2.5329667565872533,desastre
-flood,2.3757558471032203,desastre
-train,2.3584390845271987,desastre
-bombing,2.3414795004200673,desastre
-urlweb,2.258647621481836,desastre
-disaster,2.093460537971341,desastre
-earthquake,2.0052463832105807,desastre
-killed,2.0024340234192746,desastre
-police,1.922391561774673,desastre
-massacre,1.9172532029372673,desastre
-crash,1.9092709301693394,desastre
-love,-1.9399014751867123,no desastre
-new,-1.8723340773336241,no desastre
-let,-1.7381057824275956,no desastre
-bag,-1.6643591414139116,no desastre
-ruin,-1.5720848216856294,no desastre
-wrecked,-1.5519362739283982,no desastre
-get,-1.5456366259827956,no desastre
-traumatised,-1.5276149259384946,no desastre
-want,-1.5157965211671671,no desastre
-explode,-1.501564567123612,no desastre
-full,-1.483611180035519,no desastre
-song,-1.4021109829354903,no desastre
-blew,-1.3954173477332787,no desastre
-lol,-1.3776965597197661,no desastre
-avalanche,-1.3344669449612745,no desastre
+fire,3.5383356070810925,desastre
+hiroshima,3.174527293018745,desastre
+storm,2.625345514470407,desastre
+california,2.6122824584187323,desastre
+wildfire,2.5329667565872493,desastre
+flood,2.3757558471032247,desastre
+train,2.3584390845272054,desastre
+bombing,2.3414795004200615,desastre
+urlweb,2.2586476214818236,desastre
+disaster,2.093460537971338,desastre
+earthquake,2.0052463832105825,desastre
+killed,2.0024340234192772,desastre
+police,1.9223915617746752,desastre
+massacre,1.917253202937269,desastre
+crash,1.9092709301693402,desastre
+love,-1.9399014751867143,no desastre
+new,-1.8723340773336221,no desastre
+let,-1.738105782427596,no desastre
+bag,-1.6643591414139112,no desastre
+ruin,-1.572084821685631,no desastre
+wrecked,-1.5519362739284028,no desastre
+get,-1.545636625982794,no desastre
+traumatised,-1.527614925938496,no desastre
+want,-1.5157965211671691,no desastre
+explode,-1.5015645671236153,no desastre
+full,-1.483611180035522,no desastre
+song,-1.4021109829354905,no desastre
+blew,-1.3954173477332807,no desastre
+lol,-1.377696559719766,no desastre
+avalanche,-1.3344669449612772,no desastre
