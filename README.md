@@ -21,7 +21,7 @@ sentimiento.
 | 7 | Función que clasifica un tweet crudo | Pendiente (entrega final) | — |
 | 8 | Clasificación en positivo / negativo / neutro | Pendiente (entrega final) | — |
 | 9 | Tweets más positivos y más negativos | Pendiente (entrega final) | — |
-| 10 | Variable de negatividad y reentrenamiento | Pendiente (entrega final) | — |
+| 10 | Variable de negatividad y reentrenamiento | **Completo** | `notebooks/08_negatividad_reentreno.ipynb` |
 | 11 | Informe | **Versión avance** | `informe/secciones/` |
 
 El alcance actual corresponde a la **entrega de avance** (27 de agosto de 2026), que pide
