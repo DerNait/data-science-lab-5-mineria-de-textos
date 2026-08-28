@@ -1,0 +1,7 @@
+grupo,tasa_error,tweets,errores
+"Extrema baja
+(tasa <= 0.2)",0.16880341880341881,468,79
+"Intermedia
+(0.2 < tasa <= 0.8)",0.25029239766081873,855,214
+"Extrema alta
+(tasa > 0.8)",0.10344827586206896,174,18
