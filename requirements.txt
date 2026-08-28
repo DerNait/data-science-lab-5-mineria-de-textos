@@ -4,12 +4,15 @@
 #   .venv\Scripts\activate          (Windows)
 #   source .venv/bin/activate       (macOS / Linux)
 #   pip install -r requirements.txt
-#   python -c "import nltk; nltk.download('stopwords'); nltk.download('wordnet'); nltk.download('omw-1.4'); nltk.download('vader_lexicon')"
+#   python -c "import nltk; nltk.download('stopwords'); nltk.download('wordnet'); nltk.download('omw-1.4'); nltk.download('punkt_tab'); nltk.download('vader_lexicon')"
 
 # Manipulación de datos
 pandas==3.0.5
 numpy==2.5.2
 scipy==1.18.1
+# pyarrow es el motor con el que pandas lee y escribe .parquet. Lo necesitan la partición
+# congelada (data/processed/particion.parquet) y el conjunto anotado con sentimiento.
+pyarrow==25.0.1
 
 # Visualización
 matplotlib==3.11.1
@@ -19,6 +22,9 @@ pillow==12.3.0
 
 # Procesamiento de lenguaje natural
 nltk==3.10.3
+# TextBlob se usa solo como contraste de VADER en el ejercicio 8. Si no se instala, el
+# análisis principal sigue corriendo: `sentimiento.py` lo detecta y omite la comparación.
+textblob==0.20.1
 
 # Modelado
 scikit-learn==1.9.0
