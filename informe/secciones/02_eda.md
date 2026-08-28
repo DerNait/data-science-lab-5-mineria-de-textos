@@ -113,7 +113,7 @@ ser la señal de otra. La **Figura 4** compara la presencia de cada patrón entr
 | Contiene URL | 41.73% | 67.35% | **+25.62 pp** |
 | Contiene algún dígito | 49.90% | 72.74% | **+22.85 pp** |
 | Contiene hashtag | 20.13% | 25.97% | +5.84 pp |
-| Contiene MAYÚSCULAS | 18.20% | 21.30% | +3.10 pp |
+| Contiene MAYÚSCULAS | 18.27% | 21.36% | +3.09 pp |
 | Contiene entidad HTML | 5.14% | 4.27% | −0.88 pp |
 | Contiene exclamación | 11.99% | 6.02% | **−5.96 pp** |
 | Contiene mención (@) | 31.07% | 20.67% | **−10.40 pp** |
@@ -152,11 +152,11 @@ ambas preguntas:
 | Elemento | Tweets | Porcentaje |
 |---|---|---|
 | Emojis Unicode | 0 | 0.00% |
-| Emoticones ASCII (`:)`, `:D`, `<3`) | 70 | 0.94% |
+| Emoticones ASCII (`:)`, `:D`, `<3`) | 71 | 0.95% |
 | Caracteres corruptos (mojibake) | 591 | 7.90% |
 
 **No hay ni un solo emoji Unicode en el corpus.** Los emoticones ASCII aparecen en apenas el
-0.94% de los tweets. En cambio, el 7.90% contiene **mojibake**: secuencias como `\x89ÛÏ` que
+0.95% de los tweets. En cambio, el 7.90% contiene **mojibake**: secuencias como `\x89ÛÏ` que
 no son emojis sino texto Unicode mal decodificado al construir el archivo original. Con toda
 probabilidad ahí estuvieron los emojis, destruidos antes de que el conjunto llegara a
 nosotros.
@@ -167,10 +167,16 @@ mojibake**, que afecta a ocho veces más tweets y produce tokens basura. Para el
 la respuesta a *"¿valdrá la pena dejar los emoticones y analizarlos?"* es **no en este
 corpus**, y el motivo es la ausencia de material, no una decisión de diseño.
 
-Los 70 tweets que sí tienen emoticón muestran una tasa de desastre del 17.1%, muy por debajo
+Los 71 tweets que sí tienen emoticón muestran una tasa de desastre del 16.9%, muy por debajo
 del 42.6% global. Es coherente con todo lo anterior —quien escribe `:)` no está reportando
-una catástrofe— pero con 70 casos la base es demasiado pequeña para sostener una conclusión
+una catástrofe— pero con 71 casos la base es demasiado pequeña para sostener una conclusión
 firme, y así se reporta.
+
+Conviene adelantar un matiz que el análisis de sentimiento del ejercicio 8 desarrolla en
+detalle. La conclusión de que *"no hace falta un tratamiento sofisticado de emoticones"* vale
+para la **clasificación por tema**, que es de lo que trata esta sección. Para el análisis de
+sentimiento la respuesta es la contraria: VADER trae los emoticones puntuados en su léxico,
+así que ahí sí conviene conservarlos, y además conservarlos literales.
 
 ## Palabras más frecuentes en cada categoría
 
@@ -178,20 +184,34 @@ La **Figura 5** presenta las 20 palabras más frecuentes de cada categoría y la
 7 y 8** las nubes de palabras del corpus completo, de los tweets de desastre y de los
 demás.
 
-En los tweets de **desastre real** la palabra más repetida es **`fire`**, acompañada de
-`news`, `disaster`, `california`, `police`, `suicide`, `killed`, `hiroshima`, `storm`,
-`crash`, `emergency` y `nuclear`. Es vocabulario de sucesos y de cobertura periodística.
-Aparecen incluso eventos concretos: `california` e `hiroshima` remiten a episodios
-específicos presentes durante el periodo de recolección.
+**Nota sobre el preprocesamiento de esta sección.** En la entrega de avance estas frecuencias
+se calcularon con una tokenización provisional definida dentro del propio cuaderno, porque el
+módulo de preprocesamiento aún no existía cuando se escribió. Para la entrega final se
+regeneraron con **el pipeline oficial del equipo**, el mismo que alimenta el análisis de
+n-gramas y los modelos, de modo que las tres secciones del informe hablen del mismo
+vocabulario. Para la visualización se excluyen, y solo de la visualización, el token `urlweb`
+—el marcador uniforme que sustituye a cada URL y que domina la frecuencia en ambas clases sin
+significar nada—, las negaciones que el pipeline conserva a propósito para el análisis de
+sentimiento, y los tokens puramente numéricos.
 
-En los tweets que **no** son de desastre la palabra más repetida es **`body`**, seguida de
-`video`, `love`, `day`, `know`, `back` y `time`: vocabulario conversacional cotidiano, sin
-tema común.
+En los tweets de **desastre real** la palabra más repetida es **`fire`**, con 262
+apariciones, acompañada de `news`, `disaster`, `california`, `police`, `suicide`, `killed`,
+`storm`, `train`, `hiroshima`, `crash`, `bomb`, `flood` y `wildfire`. Es vocabulario de
+sucesos y de cobertura periodística. Aparecen incluso eventos concretos: `california` e
+`hiroshima` remiten a episodios específicos presentes durante el periodo de recolección.
 
-Que la palabra más frecuente de la clase negativa sea `body` merece atención. Procede de
-keywords como `body bag` y `body bags`, que la Figura 2 ya situaba entre las menos asociadas
-a desastre real. Es un ejemplo perfecto del problema central del laboratorio: vocabulario de
-catástrofe empleado en sentido no literal.
+En los tweets que **no** son de desastre la palabra más repetida es **`like`**, con 254
+apariciones, seguida de `get`, `new`, `one`, `body`, `would`, `day`, `time`, `love` y `got`:
+vocabulario conversacional cotidiano, sin tema común. Son verbos genéricos, marcadores de
+discurso y referencias al día a día.
+
+Dos observaciones que este top hace visibles. La primera es que **`body` aparece en quinto
+lugar de la clase negativa**, y `bag` también entra en su top 20. Proceden de keywords como
+`body bag` y `body bags`, que la Figura 2 ya situaba entre las menos asociadas a desastre
+real: es un ejemplo perfecto del problema central del laboratorio, vocabulario de catástrofe
+empleado en sentido no literal. La segunda es que **`fire` aparece en las dos listas**, en el
+primer puesto de una y el decimotercero de la otra, lo que anticipa la discusión de la
+subsección siguiente: frecuencia alta no implica capacidad de discriminación.
 
 La comparación de las nubes revela además una **asimetría entre las clases**. La nube de
 desastre está dominada por un campo semántico cerrado y reconocible; la de no desastre es
@@ -210,21 +230,37 @@ El enunciado pide discutir las palabras con presencia en todas las categorías. 
 una razón concreta: **una palabra frecuente en las dos clases no ayuda a distinguirlas**, por
 mucho que destaque en una nube.
 
-Siete palabras aparecen en el top 40 de ambas categorías: `burning`, `emergency`, `fire`,
-`news`, `people`, `still` y `video`. La tabla
+Nueve palabras aparecen en el top 40 de ambas categorías: `emergency`, `fire`, `get`, `like`,
+`news`, `one`, `people`, `time` y `year`. La tabla
 `results/tables/eda_palabras_compartidas.csv` recoge para cada una su frecuencia y
 probabilidad en cada clase, junto al logaritmo del cociente entre ambas probabilidades.
 
 No todas las palabras compartidas son iguales, y conviene separarlas en dos grupos:
 
-- **Compartidas y poco informativas**, con log-ratio cercano a cero: `people`, `still` y
-  `burning`. Son frecuentes en ambos lados y funcionan como ruido de fondo del dominio. Son
+- **Compartidas y poco informativas**, con log-ratio cercano a cero: `emergency` (0.122) y
+  `people` (0.286). `emergency` aparece 77 veces entre los tweets de desastre y 81 entre los
+  demás, frecuencias casi idénticas. Funcionan como ruido de fondo del dominio y son las
   candidatas naturales a **palabras vacías específicas de esta colección**, además de la
   lista estándar del inglés.
-- **Compartidas pero informativas**, con log-ratio apreciable: `fire`, `news` y `emergency`
-  se inclinan hacia desastre, mientras que `video` se inclina hacia no desastre. Aparecen en
-  ambas clases, pero no en la misma proporción. **Estas no deben eliminarse**: su frecuencia
-  bruta engaña, y solo la comparación entre clases revela que sí aportan.
+- **Compartidas pero informativas**, con log-ratio apreciable: `fire` (1.263) y `news`
+  (1.046) se inclinan con fuerza hacia desastre, mientras que `like` (−0.854) y `get`
+  (−0.800) se inclinan hacia no desastre. Aparecen en ambas clases, pero no en la misma
+  proporción. **Estas no deben eliminarse**: su frecuencia bruta engaña, y solo la comparación
+  entre clases revela que sí aportan.
+
+El caso de `emergency` corrige una lectura de la entrega de avance. Con la tokenización
+provisional que se usaba entonces parecía inclinarse hacia desastre y se recomendó
+conservarla; medida sobre el vocabulario oficial resulta ser **la más neutra de todas las
+compartidas**. Es un recordatorio de que estas conclusiones dependen del preprocesamiento del
+que salen, y la razón por la que la sección se regeneró con el pipeline definitivo. Nótese
+también que `video` y `still`, que en el avance figuraban entre las compartidas, ya no
+aparecen: el pipeline oficial las eliminó como palabras vacías de dominio.
+
+Una advertencia sobre el alcance de esta tabla: el log-ratio que se calcula aquí usa
+frecuencias **brutas y sin suavizado**, sobre las palabras del top 40. Es un diagnóstico
+exploratorio, no el criterio de selección. La lista definitiva de palabras vacías de dominio
+la fija el ejercicio 3 con un criterio más estricto —frecuencia documental por encima del 1%
+y log-ratio suavizado con Laplace sobre todo el vocabulario— y es esa la que manda.
 
 La lección metodológica es que **frecuencia e informatividad son cosas distintas**. Es
 exactamente el problema que TF-IDF resuelve al penalizar los términos presentes en muchos
@@ -249,8 +285,9 @@ medidas relativas entre clases y no solo en conteos.
    desastre frente al 49.90% del resto.
 5. Hay que **limpiar el mojibake** (7.90% de los tweets). El tratamiento de emoticones es
    irrelevante en este corpus.
-6. Las palabras vacías de dominio deberían incluir `people`, `still` y `burning`, pero **no**
-   `fire`, `news`, `emergency` ni `video`.
+6. Las palabras vacías de dominio deberían considerar `emergency` y `people`, que se reparten
+   casi por igual entre las dos clases, pero **no** `fire` ni `news`, que sí discriminan pese
+   a ser frecuentes en ambas.
 
 **Para el modelado (ejercicios 6 y 10)**
 
