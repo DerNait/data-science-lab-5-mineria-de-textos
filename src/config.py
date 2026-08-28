@@ -25,11 +25,13 @@ SECCIONES = INFORME / "secciones"
 
 TRAIN_CSV = RAW / "train.csv"
 
-# Partición congelada: la produce Persona C y la consumen todos.
-# Nadie vuelve a partir los datos por su cuenta (ver plan maestro, sección 5.2).
+# Partición entrenamiento/prueba congelada. La genera el cuaderno de modelos y la
+# consumen todos los demás: nadie vuelve a partir los datos por su cuenta, porque
+# solo así son comparables las métricas de un modelo y otro.
 PARTICION = PROCESSED / "particion.parquet"
 
-# DataFrame anotado con sentimiento: lo produce Persona A en la entrega final.
+# Corpus anotado con las puntuaciones de sentimiento. Lo genera el cuaderno de
+# sentimiento y lo consume el reentrenamiento del ejercicio 10.
 TWEETS_SENTIMIENTO = PROCESSED / "tweets_con_sentimiento.parquet"
 
 

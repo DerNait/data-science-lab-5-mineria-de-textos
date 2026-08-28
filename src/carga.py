@@ -4,7 +4,7 @@ Este módulo es el único punto de entrada a los datos. Todos los notebooks del
 laboratorio llaman a `cargar_tweets()`; nadie lee el CSV directamente. Así la
 regla de deduplicación se aplica una sola vez, de la misma forma, para todos.
 
-Contrato (ver plan maestro, sección 4.1):
+Contrato de la función:
 
     cargar_tweets(deduplicar=True) -> pd.DataFrame
 
