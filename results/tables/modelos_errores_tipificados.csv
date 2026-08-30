@@ -1,0 +1,8 @@
+tipo_error,categoria,casos
+falso negativo,etiqueta discutible,8
+falso negativo,ambigüedad genuina,1
+falso negativo,texto insuficiente,1
+falso positivo,uso figurado,5
+falso positivo,contexto inofensivo,2
+falso positivo,texto insuficiente,2
+falso positivo,vocabulario de noticias,1

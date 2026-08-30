@@ -1,0 +1,11 @@
+id,tipo_error,keyword_norm,confianza,target,pred,text
+8968,falso positivo,storm,0.9020624713667333,0,1,this storm????
+7529,falso positivo,oil spill,0.854561217161794,0,1,@TroySlaby22 slicker than an oil spill
+2838,falso positivo,cyclone,0.8199854945088413,0,1,'I'm a cyclone passion overblown' https://t.co/MmZgpHNKNP
+2513,falso positivo,collision,0.8150005298218155,0,1,Santa Fe Springs Studebaker Rd / South St **Trfc Collision-No Inj** http://t.co/6uHih9pbrU
+5322,falso positivo,fire,0.8146487236325697,0,1,My asshole is on fire  https://t.co/Y3FO0gHg8t
+10823,falso negativo,wrecked,0.0713450436307491,1,0,@Kirafrog @mount_wario Did you get wrecked again?
+7722,falso negativo,panicking,0.10340458598560258,1,0,all that panicking made me tired ;__; i want to sleep in my bed
+9912,falso negativo,trouble,0.12060019195667641,1,0,@lucysforsale funny cause my dumb ass was the young one to get n trouble the most lol
+2141,falso negativo,catastrophe,0.12464714108872949,1,0,Chances are many of us are still digging out from that catastrophe. THIS is why WoW NEEDS to evolve. THIS is why it can't be Vanilla anymore
+1051,falso negativo,bleeding,0.13680014895026976,1,0,I waited 2.5 hours to get a cab my feet are bleeding
