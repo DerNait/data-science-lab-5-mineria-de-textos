@@ -1,0 +1,13 @@
+n,grupo,texto_original,texto_procesado,esperado,prediccion,confianza,sentimiento,acierto
+1,claro,"Magnitude 7.1 earthquake hits central Mexico, buildings down in the capital. Rescue teams already on site http://t.co/xY9kLm",magnitude 7 1 earthquake hit central mexico building capital rescue team already site urlweb,desastre,desastre,0.7992,positivo,True
+2,claro,"BREAKING: wildfire jumped the highway north of the city, mandatory evacuation ordered for three neighborhoods",breaking wildfire jumped highway north city mandatory evacuation ordered three neighborhood,desastre,desastre,0.855,positivo,True
+3,claro,"Flash flood warning until 8pm. The river is over the bridge on Route 9, do NOT drive through it",flash flood warning 8pm river bridge route 9 not drive,desastre,desastre,0.8243,negativo,True
+4,claro,"Death toll from the train derailment rises to 14, dozens still trapped under the wreckage",death toll train derailment rise 14 dozen trapped wreckage,desastre,desastre,0.8539,negativo,True
+5,claro,"Just finished my thesis defense and Im getting tacos to celebrate, best day ever",finished thesis defense im getting taco celebrate best day ever,no desastre,no desastre,0.765,positivo,True
+6,claro,"The new season of that baking show is out, watching all of it tonight with my dog",new season baking show watching tonight dog,no desastre,no desastre,0.7257,neutro,True
+7,claro,Reminder: the library closes at 6pm on Fridays during the summer break,reminder library close 6pm friday summer break,no desastre,desastre,0.5224,neutro,False
+8,claro,Anyone got recommendations for a good running playlist? Mine is getting stale,anyone got recommendation good running playlist mine getting stale,no desastre,no desastre,0.7956,positivo,True
+9,trampa: uso figurado,"This exam absolutely destroyed me, my GPA is a total disaster right now",exam absolutely destroyed gpa total disaster right,no desastre,no desastre,0.6323,negativo,True
+10,trampa: contexto doméstico,"My roommates cooking set off the smoke alarm again, the whole apartment is on fire lol",roommate cooking set smoke alarm whole apartment fire lol,no desastre,desastre,0.5434,negativo,False
+11,trampa: sarcasmo,"Oh great, another emergency meeting about the quarterly report. Were all going to die of boredom",oh great another emergency meeting quarterly report going die boredom,no desastre,desastre,0.5781,negativo,False
+12,trampa: negación,"No injuries reported, no fire and no evacuation: the alarm at the plant turned out to be false",no injury reported no fire no evacuation alarm plant turned false,no desastre,desastre,0.7119,negativo,False

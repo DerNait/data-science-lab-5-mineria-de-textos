@@ -1,0 +1,9 @@
+caso,entrada,texto_procesado,prediccion,confianza,advertencia,tiene_advertencia
+cadena vacía,'',,no desastre,0.5999,"El texto recibido está vacío. La predicción refleja únicamente el sesgo del modelo hacia la clase mayoritaria, no el contenido de ningún tweet.",True
+None,None,,no desastre,0.5999,"El texto recibido está vacío. La predicción refleja únicamente el sesgo del modelo hacia la clase mayoritaria, no el contenido de ningún tweet.",True
+solo un enlace,'http://t.co/aBcD123',urlweb,desastre,0.8646,"Después de limpiarlo, el tweet no contiene ninguna palabra propia: solo marcadores de enlace o de emoticón. La predicción se apoya únicamente en ellos y no debe tomarse como una lectura del contenido.",True
+solo menciones y signos,'@alguien @otro ... !!!',,no desastre,0.5999,"El texto quedó vacío después de limpiarlo: era solo menciones, signos o palabras vacías. No queda contenido sobre el que decidir.",True
+solo emoticones,':) :) <3',,no desastre,0.5999,"El texto quedó vacío después de limpiarlo: era solo menciones, signos o palabras vacías. No queda contenido sobre el que decidir.",True
+otro idioma,'El terremoto derribo varios edificios en la ...,el terremoto derribo varios edificios en,no desastre,0.5419,"Solo 3 de 10 palabras del tweet están en el vocabulario del modelo (30%). Puede ser texto en otro idioma, jerga o erratas: la predicción se apoya en muy poca evidencia. El corpus de entrenamiento es exclusivamente en inglés.",True
+más largo que un tweet,'the building is on fire and people need help...,building fire people need help right bui,desastre,0.6917,El texto tiene 660 caracteres y un tweet admite 280. El modelo se entrenó sobre textos cortos.,True
+"tweet normal, de control",'Tornado warning issued for the county until ...,tornado warning issued county midnight,desastre,0.8505,,False

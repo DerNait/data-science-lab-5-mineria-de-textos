@@ -1,0 +1,30 @@
+n,tweet,termino,contribucion,empuja_hacia
+7,Reminder: the library closes at 6pm on Fridays during the summer break,close,0.233455925087043,desastre
+7,Reminder: the library closes at 6pm on Fridays during the summer break,reminder,0.1799915892688475,desastre
+7,Reminder: the library closes at 6pm on Fridays during the summer break,friday,0.11580093196071739,desastre
+7,Reminder: the library closes at 6pm on Fridays during the summer break,library,0.0256883825771454,desastre
+7,Reminder: the library closes at 6pm on Fridays during the summer break,break,0.017896898295552407,desastre
+7,Reminder: the library closes at 6pm on Fridays during the summer break,summer,-0.0783077761481696,no desastre
+10,"My roommates cooking set off the smoke alarm again, the whole apartment is on fi",fire,0.897316390467276,desastre
+10,"My roommates cooking set off the smoke alarm again, the whole apartment is on fi",alarm,0.24200259735184426,desastre
+10,"My roommates cooking set off the smoke alarm again, the whole apartment is on fi",set,0.2262273647734043,desastre
+10,"My roommates cooking set off the smoke alarm again, the whole apartment is on fi",apartment,0.06869385545836708,desastre
+10,"My roommates cooking set off the smoke alarm again, the whole apartment is on fi",lol,-0.4745341323929575,no desastre
+10,"My roommates cooking set off the smoke alarm again, the whole apartment is on fi",smoke,-0.3600567611614788,no desastre
+10,"My roommates cooking set off the smoke alarm again, the whole apartment is on fi",whole,-0.020720848652024837,no desastre
+11,"Oh great, another emergency meeting about the quarterly report. Were all going t",report,0.47909695618193393,desastre
+11,"Oh great, another emergency meeting about the quarterly report. Were all going t",another,0.21434375832483088,desastre
+11,"Oh great, another emergency meeting about the quarterly report. Were all going t",emergency,0.11492437835802498,desastre
+11,"Oh great, another emergency meeting about the quarterly report. Were all going t",meeting,0.09885064845713715,desastre
+11,"Oh great, another emergency meeting about the quarterly report. Were all going t",oh,0.09525108695424982,desastre
+11,"Oh great, another emergency meeting about the quarterly report. Were all going t",great,-0.17810650350469182,no desastre
+11,"Oh great, another emergency meeting about the quarterly report. Were all going t",going,-0.13798738163190621,no desastre
+11,"Oh great, another emergency meeting about the quarterly report. Were all going t",going die,-0.046459177125994025,no desastre
+12,"No injuries reported, no fire and no evacuation: the alarm at the plant turned o",fire,0.564910832791385,desastre
+12,"No injuries reported, no fire and no evacuation: the alarm at the plant turned o",evacuation,0.3571498563949105,desastre
+12,"No injuries reported, no fire and no evacuation: the alarm at the plant turned o",reported,0.2019456769745256,desastre
+12,"No injuries reported, no fire and no evacuation: the alarm at the plant turned o",alarm,0.15235416432827795,desastre
+12,"No injuries reported, no fire and no evacuation: the alarm at the plant turned o",no injury,0.1027555420963674,desastre
+12,"No injuries reported, no fire and no evacuation: the alarm at the plant turned o",injury,-0.11551806529676584,no desastre
+12,"No injuries reported, no fire and no evacuation: the alarm at the plant turned o",false,-0.027681960873010513,no desastre
+12,"No injuries reported, no fire and no evacuation: the alarm at the plant turned o",turned,-0.020677627576460033,no desastre
